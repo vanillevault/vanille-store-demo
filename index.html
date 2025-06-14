@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vanille Store Demo</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #121212; color: #e0e0e0; margin: 0; padding: 0;}
+  header { background: #1e1e1e; padding: 20px; text-align: center; font-size: 2rem; letter-spacing: 3px; font-weight: bold; }
+  main { max-width: 960px; margin: 20px auto; }
+  .product { background: #222; margin: 15px; padding: 15px; border-radius: 8px; display: flex; align-items: center; }
+  .product img { width: 150px; border-radius: 10px; margin-right: 20px; }
+  .product-info { flex: 1; }
+  .product-info h2 { margin: 0 0 10px 0; }
+  .product-info p { margin: 6px 0; }
+  .price { color: #ffa500; font-weight: bold; font-size: 1.3rem; }
+  button { background: #ffa500; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; color: #121212; font-weight: bold; }
+  button:hover { background: #ffb732; }
+  footer { text-align: center; padding: 15px; font-size: 0.9rem; color: #888; }
+</style>
+</head>
+<body>
+<header>Vanille Store Demo</header>
+<main>
+  <div class="product" id="p1">
+    <img src="https://i.imgur.com/xS0ZAl6.png" alt="AirPods Pro 2" />
+    <div class="product-info">
+      <h2>AirPods Pro 2</h2>
+      <p class="price">90€</p>
+      <button onclick="buy('AirPods Pro 2', 90)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product" id="p2">
+    <img src="https://i.imgur.com/yN3bWrQ.png" alt="Tom Ford Tobacco Vanille" />
+    <div class="product-info">
+      <h2>Tom Ford Tobacco Vanille</h2>
+      <p class="price">140€</p>
+      <button onclick="buy('Tom Ford Tobacco Vanille', 140)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product" id="p3">
+    <img src="https://i.imgur.com/bT7nMBG.png" alt="G-Shock Negro" />
+    <div class="product-info">
+      <h2>G-Shock Negro</h2>
+      <p class="price">70€</p>
+      <button onclick="buy('G-Shock Negro', 70)">Comprar</button>
+    </div>
+  </div>
+</main>
+<footer>Pago vía PayPal: +376653494 — Simulación para portafolio</footer>
+
+<script>
+function buy(product, price) {
+  alert('Gracias por elegir ' + product + ' a ' + price + '€. \nSimulación: recibirás un correo con la info de envío y pago.');
+}
+</script>
+
+</body>
+</html>
