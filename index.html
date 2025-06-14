@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Vanille Store Demo</title>
-<style>
-  body { font-family: Arial, sans-serif; background: #121212; color: #ddd; margin: 0; padding: 20px; }
-  h1 { color: #7fff7f; }
-  .product { background: #222; margin: 15px; padding: 15px; border-radius: 8px; display: inline-block; width: 250px; vertical-align: top; }
-  .product img { width: 100%; border-radius: 8px; }
-  .product h2 { margin: 10px 0 5px; color: #aaffaa; }
-  .price { font-weight: bold; color: #7fff7f; }
-  button { background: #7fff7f; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; }
-  button:hover { background: #66cc66; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanille Store Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #121212; color: #eee; margin: 0; padding: 20px; }
+    h1 { text-align: center; }
+    .products { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    .product { background: #222; border-radius: 10px; width: 300px; padding: 20px; box-shadow: 0 0 10px #000; }
+    .product img { width: 100%; border-radius: 10px; }
+    .product h2 { margin: 15px 0 5px; font-size: 1.3em; }
+    .product p { margin: 5px 0 10px; font-size: 1.1em; }
+    .price { font-weight: bold; font-size: 1.2em; color: #4caf50; }
+    .buy-btn { background: #4caf50; border: none; padding: 10px; color: #121212; font-weight: bold; border-radius: 5px; cursor: pointer; width: 100%; }
+    .buy-btn:hover { background: #388e3c; }
+  </style>
 </head>
 <body>
-
-<h1>Vanille Store Demo</h1>
-<div class="product">
-  <img src="images/airpods.jpg" alt="Airpods Pro 2" />
-  <h2>Airpods Pro 2</h2>
-  <p class="price">90€</p>
-  <button onclick="alert('Compra simulada: Airpods Pro 2')">Comprar</button>
-</div>
-<div class="product">
-  <img src="images/tobacco-vanille.jpg" alt="Tom Ford Tobacco Vanille" />
-  <h2>Tom Ford Tobacco Vanille</h2>
-  <p class="price">140€</p>
-  <button onclick="alert('Compra simulada: Tom Ford Tobacco Vanille')">Comprar</button>
-</div>
-<div class="product">
-  <img src="images/gshock.jpg" alt="G-Shock Negro" />
-  <h2>G-Shock Negro</h2>
-  <p class="price">70€</p>
-  <button onclick="alert('Compra simulada: G-Shock Negro')">Comprar</button>
-</div>
-
-<p>Pago simulado por PayPal: +376653494</p>
-
+  <h1>Vanille Store Demo</h1>
+  <div class="products">
+    <div class="product">
+      <img src="images/airpods.jpg" alt="AirPods Pro 2" />
+      <h2>AirPods Pro 2</h2>
+      <p class="price">90€</p>
+      <button class="buy-btn" onclick="alert('Pago simulado: se enviará notificación por correo. ¡Gracias!')">Comprar</button>
+    </div>
+    <div class="product">
+      <img src="images/tobacco-vanille.jpg" alt="Tom Ford Tobacco Vanille" />
+      <h2>Tom Ford Tobacco Vanille</h2>
+      <p class="price">140€</p>
+      <button class="buy-btn" onclick="alert('Pago simulado: se enviará notificación por correo. ¡Gracias!')">Comprar</button>
+    </div>
+    <div class="product">
+      <img src="images/gshock.jpg" alt="G-Shock negro" />
+      <h2>G-Shock negro</h2>
+      <p class="price">70€</p>
+      <button class="buy-btn" onclick="alert('Pago simulado: se enviará notificación por correo. ¡Gracias!')">Comprar</button>
+    </div>
+  </div>
+  <footer style="text-align:center; margin-top:40px;">
+    Pago vía PayPal: +376653494
+  </footer>
 </body>
 </html>
